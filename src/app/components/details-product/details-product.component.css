@@ -1,0 +1,97 @@
+/* Container for the single product */
+.single-product {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+  
+  /* Style for the product image */
+  .single-product-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style for the product content */
+  .single-product-content {
+    padding: 20px;
+  }
+  
+  .single-product-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .single-product-pricing {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .single-product-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  /* Style for the single product form */
+  .single-product-form {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .single-product-form form {
+    margin-right: 20px;
+  }
+  
+  .single-product-form input {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .cart-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for the product categories */
+  .single-product-form p {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  /* Style for the Share section */
+  .product-share {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .product-share li {
+    margin-right: 10px;
+  }
+  
+  .product-share a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+  }
+  
+  .product-share i {
+    transition: color 0.3s ease;
+  }
+  
+  .product-share i:hover {
+    color: #4CAF50;
+  }
+  

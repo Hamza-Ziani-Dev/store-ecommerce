@@ -1,0 +1,99 @@
+/* Add some spacing to the cart section */
+.cart-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Style the "Clear Cart Shopping" button */
+.cart-table-wrap button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Style the cart table and its elements */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table-head {
+    background-color: #f8f9fa;
+}
+
+.table-head-row th {
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table-body-row td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the product image */
+.product-image img {
+    max-width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the product name */
+.product-name {
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Style the quantity buttons and input */
+.product-quantity button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-quantity input {
+    width: 40px;
+    text-align: center;
+}
+
+/* Style the product total */
+.product-total {
+    font-weight: bold;
+}
+
+/* Style the "Delete" button */
+.product-total button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Style the "Total" section */
+.cart-table-wrap .d-flex {
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the "Order Now" button */
+.cart-table-wrap button#order-now {
+    background-color: #28a745 !important;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}

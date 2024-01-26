@@ -1,0 +1,60 @@
+<!-- product section -->
+<div class="product-section mt-150 mb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-center">
+                <div class="section-title">	
+                    <h3><span class="orange-text">Our</span> Products</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-4" >
+                <label for="">Categories</label>
+                <select  (change)="selectedChange($event)">
+                    <option value="all" selected >all</option>
+                    <option value="{{option}}" *ngFor="let option of categories" >{{option}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="!loading">
+            <div class="col-lg-4 col-md-6 text-center" *ngFor="let product of products">
+                <div class="single-product-item" >
+                    <div class="product-image" routerLink="/details/{{product.id}}">
+                            <img src="{{product.image}}" alt="">
+                    </div>
+                    <h3>{{product.title.slice(0,15)}}</h3>
+                <p class="product-price"><span>Price</span> {{product.price}} </p>
+                <!-- Your corrected HTML code -->
+                    <button class="cart-btn" *ngIf="!addButton" (click)="toggleAddButton()">
+    <i class="fas fa-shopping-cart"></i> Add to Cart
+                    </button>
+
+                    <div class="d-flex w-50" *ngIf="addButton">
+                    <input type="number" class="form-control" [(ngModel)]="amount">
+                     <button class="cart-btn" (click)="addToCart(product); toggleAddButton()">
+                      Add
+                     </button>
+                    </div>
+
+                    <!-- <button class="cart-btn" *ngIf="!addButton" (click)="addButton=true">
+                        <i class="fas fa-shopping-cart" >
+                    </i> Add to Cart</button>
+                    <div class="d-flex w-50" *ngIf="addButton">
+                        <input type="number" class="form-control" [(ngModel)]="amount">
+                        <button class="cart-btn" (click)="addToCart(product);addButton=false">
+                            Add
+                           </button>
+                    </div> -->
+                   
+                </div>
+            </div>
+           
+        </div>
+        <div class="text-center w-100" *ngIf="loading">
+            <app-spinner></app-spinner>
+        </div>
+    </div>
+</div>
+<!-- end product section -->
